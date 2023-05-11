@@ -1,0 +1,67 @@
+:root{
+    --nav-bg-color: rgb(253, 252, 252);
+}
+
+
+/* * NAV area (START) */
+nav{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    background-color: var(--nav-bg-color);
+    position: sticky;
+    top: 5px;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+nav p{
+    margin: 0;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+.nav-search-box{
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 300px;
+    border-radius: 10px;
+    border-width: 1px;
+}
+
+.nav-search-icon{
+    border: 0;
+    background-color: var(--nav-bg-color);
+}
+
+.nav-login-signup a{
+    gap: 5px;
+}
+/* NAV area (END) */
+
+
+/* * MAIN area (START) */
+.bg-image{
+    direction: rtl;
+    text-align: center;
+    background-image: url('../images/—Pngtree—financial\ material_4391789.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+}
+
+.bg-image > h1{
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* MAIN area (END) */
