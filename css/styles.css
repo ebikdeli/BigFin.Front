@@ -28,20 +28,29 @@ nav p{
 }
 
 .nav-search-box{
+    z-index: 1;
     padding-left: 10px;
     padding-right: 10px;
     width: 300px;
     border-radius: 10px;
     border-width: 1px;
+    transform: translateX();
 }
 
 .nav-search-icon{
+    position: relative;
+    right: 30px;
     border: 0;
+    padding: 0;
     background-color: var(--nav-bg-color);
 }
 
 .nav-login-signup a{
     gap: 5px;
+}
+
+.nav-login-signup i{
+    font-size: 26px;
 }
 /* NAV area (END) */
 
@@ -65,3 +74,14 @@ nav p{
     transform: translate(-50%, -50%);
 }
 /* MAIN area (END) */
+
+
+/*  * Footer area (START) */
+footer{
+    direction: rtl;
+    text-align: center;
+    background-color: darkblue;
+    color: cornsilk;
+    height: 400px;
+}
+/*  Footer area (END) */
