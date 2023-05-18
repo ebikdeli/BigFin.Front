@@ -92,9 +92,15 @@
             </aside>
             <aside class="mx-auto text-center text-light col-md-5 col-10">
                 <p class="h5 my-3">ورود کاربر</p>
+                <!-- ! Login form error -->
+                <div id="login-form-error">
+
+                </div>
                 <!-- ? Login form -->
                 <form id="login-form" action="" method="post">
+                    <div class="d-none error" id="login-email-error"></div>
                     <input class="login-signup-form" type="text" name="username_login" placeholder="ایمیل">
+                    <div class="d-none error" id="login-password-error"></div>
                     <input class="login-signup-form" type="password" name="password_login"
                         placeholder="پسورد" id="">
                     <button type="submit">ورود</button>
@@ -116,11 +122,18 @@
                 <h5 class="mt-5 mb-3" style="line-height: 1.5; text-align: right;">
                     آیا هنوز ثبت نام نکرده اید؟ در این صورت فرم زیر را پر کرده تا ثبت نام خود را کامل کنید
                 </h5>
+                <!-- ! Signup form error -->
+                <div id="signup-form-error">
+
+                </div>
                 <!-- ? Sign up form -->
                 <form id="sign-up-form" action="" method="post">
+                    <div class="d-none error" id="signup-email-error"></div>
                     <input class="login-signup-form" type="text" name="username" placeholder="ایمیل">
+                    <div class="d-none error" id="signup-password-error"></div>
                     <input class="login-signup-form" type="password" name="password"
                         placeholder="پسورد" id="">
+                    <div class="d-none error" id="signup-password-confirm-error"></div>
                     <input class="login-signup-form" type="password" name="password_confirm"
                         placeholder="تکرار پسورد" id="">
                     <button type="submit">ثبت نام</button>

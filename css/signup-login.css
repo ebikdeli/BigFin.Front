@@ -55,3 +55,19 @@ button{
     width: 60px;
     height: 50px;
 }
+
+
+/* ! errors */
+.error{
+    color: red;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+}
+
+#login-form-error, #signup-form-error{
+    color: red;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+}
