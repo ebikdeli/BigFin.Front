@@ -15,7 +15,16 @@ socket.addEventListener('open', function (event) {
 socket.addEventListener('message', function (event) {
     // console.log('Message from server ', event.data);
     rawData = JSON.parse(event.data)
-    console.log(rawData['data']);
+    // console.log(rawData['data']);
+    rawData['data'].forEach(elem => {
+        // console.log(elem);
+        if (elem['s'] == 'BINANCE:BTCUSDT'){
+            bitcoin.innerHTML = elem['p'];
+        }
+        else if(elem['s'] == 'APPLE'){
+            apple.innerHTML = elem['p'];
+        }
+    })
     // console.log(rawData['data'][0]['p']);
     // apple.innerHTML = rawData['data'][0]['p']
 });

@@ -1,0 +1,57 @@
+:root{
+    --link-color: rgb(6, 165, 6);
+}
+
+main{
+    background-color: rgb(20 20 155);
+    font-family: 'B Yekan';
+    height: 1000px;
+}
+
+.login-sign-up-image{
+    width: 100%;
+    object-fit: cover;
+}
+
+.login-signup-form{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+    border-radius: 5px;
+    width: 320px;
+    height: 40px;
+    font-size: larger;
+    font-weight: 600;
+    background-color: aquamarine;
+}
+
+button{
+    text-align: center;
+    background-color: var(--link-color);
+    padding: 8px 30px;
+    border-radius: 5px;
+    color: antiquewhite;
+    font-family: 'B Yekan';
+}
+
+.google-sign{
+    direction: rtl;
+}
+
+.google-sign a{
+    text-decoration: none;
+    width: fit-content;
+}
+
+.google-sign h4{
+    color: var(--link-color);
+    margin: 0;
+}
+
+.google-sign img{
+    width: 60px;
+    height: 50px;
+}

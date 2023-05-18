@@ -17,6 +17,7 @@
 
 
     <!-- *** (START) head block -->
+    <link rel="stylesheet" href="./css/signup-login.css">
     <!-- *** (END) head block -->
 
 
@@ -35,7 +36,7 @@
 
 
     <!-- *** (START) navbar block -->
-    <nav class="d-flex justify-content-between align-items-center flex-row">
+    <nav class="d-flex justify-content-between align-items-center flex-wrap">
         <!-- Logo-links div -->
         <div class="col-lg-4 col-md-6 col-10 d-flex justify-content-between align-items-center">
             <!-- logo box -->
@@ -85,23 +86,47 @@
 
     <!-- *** (START) content block -->
     <main class="my-3">
-        <div class="bg-image mb-2">
-            <h1>صرافی آنلاین BigFin پیشتاز در ارائه خدمات مالی</h1>
+        <div class="d-flex justify-content-around align-items-center flex-wrap-reverse">
+            <aside class="mx-auto col-md-5 col-10">
+                <img class="login-sign-up-image" src="./images/—Pngtree—financial material_4391789.png" alt="">
+            </aside>
+            <aside class="mx-auto text-center text-light col-md-5 col-10">
+                <p class="h5 my-3">ورود کاربر</p>
+                <!-- ? Login form -->
+                <form id="login-form" action="" method="post">
+                    <input class="login-signup-form" type="text" name="username_login" placeholder="ایمیل">
+                    <input class="login-signup-form" type="password" name="password_login"
+                        placeholder="پسورد" id="">
+                    <button type="submit">ورود</button>
+                </form>
+                <br>
+                <p class="m-0 py-2">
+                    آیا رمز عبور خود را فراموش کرده اید؟
+                    <a href="#" class="px-1"
+                        style="text-decoration: none; color:rgb(6, 165, 6); font-weight: 800; font-size: larger;">اینجا</a>
+                    کلیک کنید
+                </p>
+                <!-- * google sign in -->
+                <div class="google-sign my-3">
+                    <a href="#" class="mx-auto d-flex align-items-center justify-content-center">
+                    <h4>با حساب گوگل وارد شوید</h4>
+                    <img src="./images/google-logo.png" alt="">
+                    </a>
+                </div>
+                <h5 class="mt-5 mb-3" style="line-height: 1.5; text-align: right;">
+                    آیا هنوز ثبت نام نکرده اید؟ در این صورت فرم زیر را پر کرده تا ثبت نام خود را کامل کنید
+                </h5>
+                <!-- ? Sign up form -->
+                <form id="sign-up-form" action="" method="post">
+                    <input class="login-signup-form" type="text" name="username" placeholder="ایمیل">
+                    <input class="login-signup-form" type="password" name="password"
+                        placeholder="پسورد" id="">
+                    <input class="login-signup-form" type="password" name="password_confirm"
+                        placeholder="تکرار پسورد" id="">
+                    <button type="submit">ثبت نام</button>
+                </form>
+            </aside>
         </div>
-        <h2 class="my-5" style="direction: rtl;">صرافی رمزارز BigFin خدمات مالی را به مشتریان محترم ارائه می دهد</h2>
-        <h3 class="my-2" style="direction: rtl;">لیست قیمت ها</h3>
-
-        <table class="mx-auto">
-            <tr>
-                <th>بیتکوین</th>
-                <th class="bitcoin-price">0</th>
-            </tr>
-            <tr>
-                <th>اپل</th>
-                <th class="apple-price">0</th>
-            </tr>
-        </table>
-        
     </main>
     <!-- *** (END) content block -->
 
@@ -120,11 +145,11 @@
     crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <!-- <script src="./scripts/script.js" type="module"></script> -->
-<script src="./scripts/websocket.js"></script>
 <!-- *** (END) script_base block -->
 
 
 <!-- *** (START) script block -->
+<script src="./scripts/login.js" type="module"></script>
 <!-- *** (END) script block -->
 
 </html>
